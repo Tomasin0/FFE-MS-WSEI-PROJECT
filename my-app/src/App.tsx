@@ -1,11 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC } from 'react';
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
-function App() {
+import {  Home } from './components/Routes/Home/home';
+import { Posts } from './components/Routes/Posts/posts';
+
+export const App: FC = () => {
   return (
-    
-  );
+    <BrowserRouter>
+      <img src={`${process.env.PUBLIC_URL}/img/logo.png`}
+      <div>
+      
+      </div>
+    </BrowserRouter>
+  )
 }
-
-export default App;
